@@ -1,0 +1,36 @@
+body{
+    background: url('assets/img/bgp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+nav {
+    background-color: rgba(255, 0, 0, 0.301) !important;
+    border-radius: 30px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.myCard {
+    border: solid 1px #cccccc8e;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px!important;
+    align-items: center!important;
+    padding: 10px!important;
+    background-color: rgba(240, 255, 255, 0.073);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myCard:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 255, 0.087)
+}
+
