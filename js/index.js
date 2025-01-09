@@ -13,8 +13,6 @@ fetch('https://my-json-server.typicode.com/Jmini00/fake-api/pokemons')
             pokemonNode.querySelector('.card-img-top').src = `assets/img/images/${pokemon.id}.png`
             pokemonNode.querySelector('.card-img-top').alt = pokemon.name
             pokemonNode.querySelector('.card-img-top').title = `#${pokemon.id} ${pokemon.name}`
-            //productNode.querySelector('.card-body .fw-bolder').textContent = product.title
-            //productNode.querySelector('.card-body .price').textContent = `${product.price.toFixed(2)} €`
             pokemonNode.querySelector('.pokemon').href = `pokemon.html?id=${pokemon.id}`
 
             grid.appendChild(pokemonNode)
