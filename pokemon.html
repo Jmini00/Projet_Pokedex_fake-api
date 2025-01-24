@@ -7,13 +7,12 @@
         <meta name="author" content="" />
         <title>Pokedex fake API</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/thumbnails/25.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet"/>
-
         <script src="js/pokemon.js" defer></script>
     </head>
     <body>
@@ -52,7 +51,7 @@
 
         <!-- Section-->
         <main class="container py-5">
-            <section class="row mx-auto" id="pokemons-grid">
+            <section class="row mx-auto" id="pokemon-grid">
             </section>
         </main>
 
@@ -67,7 +66,7 @@
 
         <!-- Template pour les détails du pokemon -->
         <template id="pokemon-template">
-            <div class="card mb-3 text-white pokemonCard">
+            <div class="card mb-3 text-white pokemonCard" id="">
                 <div class="row g-0">
                   <div class="col-md-4">
                     <img src="" class="img-fluid rounded-start" alt="">
@@ -81,6 +80,8 @@
                       <p class="card-text-spattack"></p>
                       <p class="card-text-spdefense"></p>
                       <p class="card-text-speed"></p>
+                      <button class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce Pokemon ?')">Supprimer</button>
+                      <button class="btn btn-warning">Modifier</button>
                     </div>
                   </div>
                 </div>

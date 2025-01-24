@@ -5,7 +5,7 @@ body{
     
 }
 
-nav {
+.navbar {
     background-color: rgba(255, 0, 0, 0.301) !important;
     border-radius: 30px;
     margin: 20px;
@@ -20,7 +20,7 @@ nav {
     margin: 10px!important;
     align-items: center!important;
     padding: 10px!important;
-    background-color: rgba(240, 255, 255, 0.073);
+    /*background-color: rgba(240, 255, 255, 0.073);*/
 }
 
 section {
@@ -31,10 +31,108 @@ section {
 
 .myCard:hover {
     transform: scale(1.05);
-    background-color: rgba(0, 0, 255, 0.087)
+    /*background-color: rgba(0, 0, 255, 0.087)*/
 }
 
 .pokemonCard {
     max-width: 80%;
     background-color: rgba(240, 255, 255, 0.073);
 }
+
+.snip1576 {
+    /*background-color: #fff;*/
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    margin: 8px;
+    max-width: 315px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .snip1576 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+  }
+  
+  .snip1576:after {
+    background-color: #8d9292;
+    opacity: .5;
+    height: 150%;
+    bottom: -145%;
+    content: '';
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  
+  .snip1576 img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .snip1576 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  
+  .snip1576 h3 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /*margin: 0;*/
+    text-transform: uppercase;
+    color: rgba(14, 19, 74, 0.91); 
+ }
+  
+  .snip1576 h3 span {
+    display: block;
+    font-weight: 700;
+    color: rgb(48, 37, 37);
+  }
+  
+  .snip1576 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .snip1576:hover > img,
+  .snip1576.hover > img {
+    opacity: 0.1;
+  }
+  
+  .snip1576:hover:after,
+  .snip1576.hover:after {
+    bottom: 95%;
+  }
+  
+  .snip1576:hover figcaption,
+  .snip1576.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
