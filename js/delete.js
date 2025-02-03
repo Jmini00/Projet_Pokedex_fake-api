@@ -7,7 +7,7 @@ console.log(btDelete);
 btDelete.addEventListener('click', function() {
     deletePokemon(idPokemon);
 });
-
+ 
 async function deletePokemon(id) {
     //const confirmation = confirm("Êtes-vous sûr de vouloir supprimer ce Pokémon ?");
     //if (!confirmation) return;

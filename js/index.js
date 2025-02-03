@@ -24,7 +24,34 @@ fetch('https://my-json-server.typicode.com/Jmini00/fake-api/pokemons')
             pokemonNode.querySelector('.card-text-speed').textContent = `Vitesse : ${pokemon.Speed}`
             grid.appendChild(pokemonNode)
         })
+        // Lance le moteur de recherche une fois que les cartes sont générées
+        searchPokemon();
     })
     .catch(error => console.error(error))
 
-   
+  
+/**
+ * Moteur de recherche par nom
+ */
+function searchPokemon() {
+    const search = document.getElementById('search');
+    const pokemonCards = document.querySelectorAll('#pokemons-grid .myCard');
+
+    search.addEventListener('input', () => {
+        const query = search.value.toLowerCase().trim();
+
+        pokemonCards.forEach(pokemonCard => {
+            const pokemonName = pokemonCard.querySelector('h3').textContent.toLowerCase();
+            // Vérifie si l'artiste correspond à la recherche
+            if (pokemonName.includes(query)) {
+                pokemonCard.style.display = ''; // Affiche la carte
+                //pokemonCard.classList.remove('hidden');
+                //pokemonCard.classList.add('visible');
+            } else {
+                pokemonCard.style.display = 'none'; // Masque la carte
+                //pokemonCard.classList.remove('visible');
+                //pokemonCard.classList.add('hidden');
+            }
+        });
+    });
+}

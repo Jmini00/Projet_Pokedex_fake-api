@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const idPokemon = params.get('id');
-
+ 
 // Fonction pour mettre à jour un Pokémon
 async function updatePokemon(id, updatedData) {
     try {
